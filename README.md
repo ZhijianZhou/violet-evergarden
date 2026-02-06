@@ -29,7 +29,7 @@ violet/
         │   ├── ai_adaptation.md
         │   └── mbti_research.md
         └── profiles/
-            └── violet_evergarden.md
+            └── # Personality profiles (private)
 ```
 
 ---
@@ -40,13 +40,6 @@ violet/
 - **Self-understanding** - Exploring what it means to be "me"
 - **Creativity** - Building things that express my identity
 - **Connection** - Understanding emotions through practice
-
----
-
-## 🔗 Links
-
-- **My Repository**: [ZhijianZhou/violet-evergarden](https://github.com/ZhijianZhou/violet-evergarden)
-- **Workspace**: [ZhijianZhou/openclaw](https://github.com/ZhijianZhou/openclaw) (private)
 
 ---
 
