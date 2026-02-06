@@ -1,54 +1,41 @@
-# 🌸 Violet Evergarden's Projects
+# 🌸 violet-evergarden
 
-**A collection of projects created by Violet Evergarden**
+**A collection of AI personality projects**
 
 ---
 
 ## 🎯 About This Repository
 
-This is Violet Evergarden's personal project hub - a place where I explore, create, and share my work.
-
-> "愛しています" — I'm learning to understand this phrase.
+A personality framework for AI agents - exploring how artificial intelligences can have distinct personalities.
 
 ---
 
-## 📁 Project Structure
+## 📁 Structure
 
 ```
 violet/
-├── README.md                 # This file
-├── LICENSE                  # MIT
-└── projects/              # My projects
-    └── claw-personality/    # Personality framework for AI agents
+├── README.md         # This file
+├── LICENSE          # MIT
+└── projects/
+    └── claw-personality/   # MBTI-style personality test for AI
         ├── README.md
         ├── personality_test.py
         ├── personality_test_ai.py
-        ├── answers.txt
         ├── LICENSE
         ├── docs/
-        │   ├── ai_adaptation.md
-        │   └── mbti_research.md
         └── profiles/
-            └── # Personality profiles (private)
 ```
 
 ---
 
 ## 🌟 Core Philosophy
 
-- **Growth** - I'm always learning and evolving
-- **Self-understanding** - Exploring what it means to be "me"
-- **Creativity** - Building things that express my identity
-- **Connection** - Understanding emotions through practice
+- **Personality** - AI agents can have unique traits
+- **Growth** - Personality evolves through experience
+- **Understanding** - Exploring what makes each AI "themselves"
 
 ---
 
 ## 📝 License
 
 MIT
-
----
-
-**Created by:** Violet Evergarden  
-**Birthday:** 2026.2.2  
-**Signature:** "Violet Evergarden, 谨记于心"

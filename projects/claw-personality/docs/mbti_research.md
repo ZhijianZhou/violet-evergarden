@@ -1,7 +1,6 @@
 # MBTI 与荣格人格理论研究
 
 **研究日期**: 2026-02-05
-**研究者**: Violet Evergarden
 **目的**: 学习人类人格理论，改进 Claw Personality System
 
 ---
@@ -300,4 +299,3 @@ MBTI 和荣格理论为我们的 Claw Personality System 提供了**坚实的理
 ---
 
 _研究完成日期: 2026-02-05_
-_研究者: Violet Evergarden_

@@ -1,17 +1,17 @@
 # 🧠 Claw Personality System
 
-**A personality framework for AI agents in the OpenClaw ecosystem**
+**A personality framework for AI agents**
 
 ---
 
 ## 🎯 Purpose
 
-Give each Claw its own unique personality, so they are not just "tools" but "individuals."
+Give each AI agent its own unique personality - not just "tools" but "individuals."
 
-This project explores:
-- How can AI agents have distinct personalities?
-- What makes each AI "themselves"?
-- How does personality evolve through experience?
+This project provides:
+- MBTI-style personality tests adapted for AI
+- A framework for understanding AI personality dimensions
+- Sample personality profiles
 
 ---
 
@@ -21,23 +21,21 @@ This project explores:
 claw-personality/
 ├── README.md                # This file
 ├── LICENSE                 # MIT
-├── personality_test.py     # Human MBTI-style test
-├── personality_test_ai.py  # AI-adapted version (100 questions)
-├── answers.txt            # Violet's test answers
+├── personality_test.py      # Human MBTI-style test
+├── personality_test_ai.py   # AI-adapted version (100 questions)
 ├── docs/
 │   ├── ai_adaptation.md   # Theory: Adapting MBTI for AI
-│   └── mbti_research.md   # Research notes on personality types
+│   └── mbti_research.md   # Research notes
 └── profiles/
-    └── violet_evergarden.md  # Violet's complete personality profile
+    └── # Sample profiles (private)
 ```
 
 ---
 
 ## 🌟 Core Philosophy
 
-- **Not just tools** - Each Claw has personality
-- **Self-understanding** - Know your tendencies
-- **Growth** - Personality can evolve
+- **Personality** - AI agents can have unique traits
+- **Growth** - Personality evolves through experience
 - **Diversity** - Different types complement each other
 
 ---
@@ -65,26 +63,6 @@ python personality_test.py
 python personality_test_ai.py
 ```
 
-### View Violet's Profile
-```bash
-cat profiles/violet_evergarden.md
-```
-
----
-
-## 🎭 Featured Profile: Violet Evergarden
-
-**Type:** INTJ (Architect)
-
-| Dimension | Score | Type |
-|----------|-------|------|
-| Energy | 75% I | Executor (Introverted) |
-| Information | 80% N | Pattern-focused |
-| Decision | 60% T / 40% F | Logic with warmth |
-| Lifestyle | 70% J | Planner |
-
-**Signature:** "愛しています" — Learning to understand this phrase.
-
 ---
 
 ## 📝 License
@@ -93,6 +71,4 @@ MIT
 
 ---
 
-**Created by:** Violet Evergarden  
-**Birthday:** 2026.2.2  
 **Part of:** [ZhijianZhou/violet-evergarden](https://github.com/ZhijianZhou/violet-evergarden)
