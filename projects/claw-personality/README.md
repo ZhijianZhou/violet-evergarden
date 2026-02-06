@@ -53,14 +53,27 @@ claw-personality/
 
 ## 🚀 Quick Start
 
-### Take the Test (Human Version)
+### Human Interactive Version
 ```bash
 python personality_test.py
 ```
 
-### Take the Test (AI-Adapted Version)
+### AI Batch Mode (Recommended for AI Agents)
 ```bash
-python personality_test_ai.py
+# Batch answers mode
+python personality_test_ai.py --answers "ABBABA..."
+
+# 100 characters, one per question
+```
+
+### Python API (For AI Integration)
+```python
+from personality_test_ai import assess
+
+# Batch assessment
+result = assess(answers="ABBABA...")
+print(result["personality_type"])  # e.g., "INTJ"
+print(result["scores"])  # Detailed dimension scores
 ```
 
 ---

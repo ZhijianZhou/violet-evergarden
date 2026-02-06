@@ -1002,5 +1002,89 @@ def run_test():
     }
 
 
+# ============================================================================
+# CLI API
+# ============================================================================
+
+def assess(answers: str = None) -> dict:
+    """
+    AI 自我评估 API
+
+    Args:
+        answers: 100个字符的答案字符串，如 "ABBABA..."
+
+    Returns:
+        dict: 包含分数和人格类型的结构化结果
+    """
+    if answers is None:
+        # 交互模式
+        return run_test()
+
+    # 解析答案字符串
+    all_dimensions = {
+        "cognitive_style": COGNITIVE_STYLE,
+        "decision_making": DECISION_MAKING,
+        "interaction": INTERACTION,
+        "autonomy_learning": AUTONOMY_LEARNING,
+        "claw_behaviors": CLAW_BEHAVIORS
+    }
+
+    # 验证答案数量
+    expected_total = sum(len(dim["questions"]) for dim in all_dimensions.values())
+    if len(answers) != expected_total:
+        raise ValueError(f"答案数量错误: 期望 {expected_total} 个，实际 {len(answers)} 个")
+
+    # 解析答案
+    parsed_answers = {}
+    all_questions = []
+    for dim in all_dimensions.values():
+        all_questions.extend(dim["questions"])
+
+    for i, q in enumerate(all_questions):
+        parsed_answers[q["id"]] = answers[i].upper()
+
+    # 计算结果
+    scores = calculate_scores(parsed_answers)
+    personality_type = get_type_label(scores)
+
+    return {
+        "scores": scores,
+        "personality_type": personality_type,
+        "total_questions": len(answers)
+    }
+
+
+def main():
+    """命令行入口"""
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Claw Personality Test v4.0 - AI 适配版"
+    )
+    parser.add_argument(
+        "--answers",
+        type=str,
+        help="批量答案，如: ABBABA... (100个字符)"
+    )
+
+    args = parser.parse_args()
+
+    if args.answers:
+        # 批量评估模式
+        result = assess(args.answers)
+        print("\n" + "="*70)
+        print("🎯 测试结果")
+        print("="*70)
+        print(f"\n📊 人格类型: {result['personality_type']}")
+        print("\n📈 各维度分析:")
+        for dim_name, scores in result["scores"].items():
+            print(f"\n  {dim_name}:")
+            print(f"    A倾向: {scores['A_percentage']:.1f}%")
+            print(f"    B倾向: {scores['B_percentage']:.1f}%")
+    else:
+        # 交互模式
+        run_test()
+
+
 if __name__ == "__main__":
-    run_test()
+    main()
